@@ -1,4 +1,4 @@
-/** .jasno - tiny JavaScript framework
+/** .jasno - a tiny JavaScript framework
  * 
  * @author		Jan Pecha, <janpecha@email.cz>
  * @version		2012-09-14-1
