@@ -29,4 +29,4 @@ CSS
 
 
 Author: Jan Pecha (http://janpecha.iunas.cz/)
-License: New BSD License
+<br>License: New BSD License
