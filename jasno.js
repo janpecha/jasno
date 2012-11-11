@@ -1,13 +1,18 @@
 /** .jasno - a tiny JavaScript framework
  * 
  * @author		Jan Pecha, <janpecha@email.cz>
- * @version		2012-09-14-1
+ * @version		2012-11-11-1
  * @license		New BSD License
  */
 
 var Jasno = Jasno || {};
 
 /****** HTML Class Operations ******/
+/**
+ * @param	HTML Element
+ * @param	String
+ * @return	void
+ */
 Jasno.addClass = function(el, classNm) {
 	if(!el.className)
 	{
@@ -19,6 +24,11 @@ Jasno.addClass = function(el, classNm) {
 	}
 }
 
+/**
+ * @param	HTML Element
+ * @param	String
+ * @return	void
+ */
 Jasno.removeClass = function(el, classNm) {
 	if(el.className)
 	{
@@ -29,6 +39,11 @@ Jasno.removeClass = function(el, classNm) {
 	}
 }
 
+/**
+ * @param	HTML Element
+ * @param	String
+ * @return	bool
+ */
 Jasno.hasClass = function(el, classNm) {
 	return (' ' + el.className + ' ').indexOf(' ' + classNm + ' ') > -1;
 }
@@ -36,6 +51,10 @@ Jasno.hasClass = function(el, classNm) {
 
 
 /****** Events ******/
+/**
+ * @param	event
+ * @return	FALSE
+ */
 Jasno.cancelEvent = function(e) {
 	e = e ? e : window.event;
 
@@ -56,6 +75,10 @@ Jasno.cancelEvent = function(e) {
 	return false;
 }
 
+/**
+ * @param	event
+ * @return	bool
+ */
 Jasno.addEvent = function(el, type, handler) {
 	if(el.addEventListener)
 	{
@@ -72,6 +95,10 @@ Jasno.addEvent = function(el, type, handler) {
 	return false;
 }
 
+/**
+ * @param	event
+ * @return	HTML Element
+ */
 Jasno.getSrcElement = function(e){
 	if(window.event)
 	{
@@ -86,6 +113,11 @@ Jasno.getSrcElement = function(e){
 
 
 /****** CSS ******/
+/**
+ * @param	HTML Element
+ * @param	String
+ * @return	String
+ */
 Jasno.getCss = function(el, propertyName) {
 	if (obj.currentStyle)
 	{
@@ -95,5 +127,41 @@ Jasno.getCss = function(el, propertyName) {
 	{
 		return document.defaultView.getComputedStyle(obj, null).getPropertyValue(styleProperty);
 	}
+}
+
+
+/****** Language ******/
+/**
+ * @link	http://jspro.com/raw-javascript/testing-for-empty-values/
+ * @param	mixed
+ * @return	bool
+ */
+Jasno.empty = empty(data)
+{
+	if(typeof(data) == 'number' || typeof(data) == 'boolean')
+	{ 
+		return false; 
+	}
+	
+	if(typeof(data) == 'undefined' || data === null)
+	{
+		return true; 
+	}
+	
+	if(typeof(data.length) != 'undefined')
+	{
+		return data.length == 0;
+	}
+	
+	var count = 0;
+	for(var i in data)
+	{
+		if(data.hasOwnProperty(i))
+		{
+			count ++;
+		}
+	}
+	
+	return count == 0;
 }
 

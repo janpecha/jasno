@@ -27,6 +27,11 @@ CSS
 * *string* ```Jasno.getCss``` (el, propertyName);
 
 
+Language
+--------
+* *bool* ```Jasno.empty``` (data);
 
-Author: Jan Pecha (http://janpecha.iunas.cz/)
+
+
+Author: Jan Pecha (http://janpecha.iunas.cz/), 2012
 <br>License: New BSD License
