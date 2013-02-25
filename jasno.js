@@ -1,7 +1,7 @@
 /** .jasno - a tiny JavaScript framework
  * 
  * @author		Jan Pecha, <janpecha@email.cz>
- * @version		2012-11-11-1
+ * @version		2013-02-25-1
  * @license		New BSD License
  */
 
@@ -9,7 +9,7 @@ var Jasno = Jasno || {};
 
 /****** HTML Class Operations ******/
 /**
- * @param	HTML Element
+ * @param	HTMLElement
  * @param	String
  * @return	void
  */
@@ -25,7 +25,7 @@ Jasno.addClass = function(el, classNm) {
 }
 
 /**
- * @param	HTML Element
+ * @param	HTMLElement
  * @param	String
  * @return	void
  */
@@ -40,7 +40,7 @@ Jasno.removeClass = function(el, classNm) {
 }
 
 /**
- * @param	HTML Element
+ * @param	HTMLElement
  * @param	String
  * @return	bool
  */
@@ -76,7 +76,9 @@ Jasno.cancelEvent = function(e) {
 }
 
 /**
- * @param	event
+ * @param	HTMLElement
+ * @param	String  event type (click, etc.)
+ * @param	handler
  * @return	bool
  */
 Jasno.addEvent = function(el, type, handler) {
@@ -97,7 +99,7 @@ Jasno.addEvent = function(el, type, handler) {
 
 /**
  * @param	event
- * @return	HTML Element
+ * @return	HTMLElement
  */
 Jasno.getSrcElement = function(e){
 	if(window.event)
@@ -114,7 +116,7 @@ Jasno.getSrcElement = function(e){
 
 /****** CSS ******/
 /**
- * @param	HTML Element
+ * @param	HTMLElement
  * @param	String
  * @return	String
  */
@@ -136,8 +138,7 @@ Jasno.getCss = function(el, propertyName) {
  * @param	mixed
  * @return	bool
  */
-Jasno.empty = empty(data)
-{
+Jasno.empty = function (data) {
 	if(typeof(data) == 'number' || typeof(data) == 'boolean')
 	{ 
 		return false; 
