@@ -1,5 +1,5 @@
 /** .jasno - a tiny JavaScript framework
- * 
+ *
  * @author		Jan Pecha, <janpecha@email.cz>
  * @version		2013-02-25-1
  * @license		New BSD License
@@ -61,7 +61,7 @@ Jasno.cancelEvent = function(e) {
 	if(e.stopPropagation)
 	{
 		e.stopPropagation();
-	}	
+	}
 
 	if(e.preventDefault)
 	{
@@ -140,20 +140,20 @@ Jasno.getCss = function(el, propertyName) {
  */
 Jasno.empty = function (data) {
 	if(typeof(data) == 'number' || typeof(data) == 'boolean')
-	{ 
-		return false; 
+	{
+		return false;
 	}
-	
+
 	if(typeof(data) == 'undefined' || data === null)
 	{
-		return true; 
+		return true;
 	}
-	
+
 	if(typeof(data.length) != 'undefined')
 	{
 		return data.length == 0;
 	}
-	
+
 	var count = 0;
 	for(var i in data)
 	{
@@ -162,7 +162,7 @@ Jasno.empty = function (data) {
 			count ++;
 		}
 	}
-	
+
 	return count == 0;
 }
 
