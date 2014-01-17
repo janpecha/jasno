@@ -1,0 +1,23 @@
+{
+  "name": "janpecha/jasno",
+  "main": "jasno.js",
+  "homepage": "https://github.com/janpecha/jasno",
+  "authors": [
+    "Jan Pecha <janpecha@email.cz>"
+  ],
+  "description": "A tiny JavaScript library (\"framework\")",
+  "keywords": [
+    "tiny",
+    "JavaScript",
+    "library",
+    "framework"
+  ],
+  "license": "BSD-3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
