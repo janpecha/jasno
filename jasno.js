@@ -1,7 +1,6 @@
 /** .jasno - a tiny JavaScript framework
  *
  * @author		Jan Pecha, <janpecha@email.cz>
- * @version		2013-02-25-1
  * @license		New BSD License
  */
 
