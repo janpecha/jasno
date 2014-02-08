@@ -27,11 +27,13 @@ CSS
 * *string* ```Jasno.getCss``` (el, propertyName);
 
 
-Language
---------
+JavaScript
+----------
 * *bool* ```Jasno.empty``` (data);
+	<br>Is given value empty (```undefined```, ```null```, empty collection/array, empty object)?
 
 
+------------------------------------------------
 
 Author: Jan Pecha (http://janpecha.iunas.cz/), 2012
 <br>License: New BSD License
