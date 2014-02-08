@@ -21,7 +21,7 @@ Jasno.addClass = function(el, classNm) {
 	{
 		el.className = el.className + ' ' + classNm;
 	}
-}
+};
 
 /**
  * @param	HTMLElement
@@ -36,7 +36,7 @@ Jasno.removeClass = function(el, classNm) {
 			el.className = el.className.slice(0, pos) + el.className.slice(pos + classNm.length);
 		}
 	}
-}
+};
 
 /**
  * @param	HTMLElement
@@ -45,7 +45,7 @@ Jasno.removeClass = function(el, classNm) {
  */
 Jasno.hasClass = function(el, classNm) {
 	return (' ' + el.className + ' ').indexOf(' ' + classNm + ' ') > -1;
-}
+};
 
 
 
@@ -72,7 +72,7 @@ Jasno.cancelEvent = function(e) {
 	e.returnValue = false;
 
 	return false;
-}
+};
 
 /**
  * @param	HTMLElement
@@ -94,7 +94,7 @@ Jasno.addEvent = function(el, type, handler) {
 		}
 	}
 	return false;
-}
+};
 
 /**
  * @param	event
@@ -109,7 +109,7 @@ Jasno.getSrcElement = function(e){
 	{
 		return e.target;	//event.target (OP, FF)
 	}
-}
+};
 
 
 
@@ -128,7 +128,7 @@ Jasno.getCss = function(el, propertyName) {
 	{
 		return document.defaultView.getComputedStyle(obj, null).getPropertyValue(styleProperty);
 	}
-}
+};
 
 
 /****** Language ******/
@@ -163,5 +163,5 @@ Jasno.empty = function (data) {
 	}
 
 	return count == 0;
-}
+};
 
