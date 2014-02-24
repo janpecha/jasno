@@ -1,7 +1,8 @@
-/** .jasno - a tiny JavaScript framework
+/**
+ * .jasno - a tiny JavaScript framework
  *
  * @author		Jan Pecha, <janpecha@email.cz>
- * @license		New BSD License
+ * @license		New BSD License (see file license.md)
  */
 
 var Jasno = Jasno || {};
